@@ -17,7 +17,7 @@ namespace Assignment_1.Controllers
         [HttpGet("q2/Greeting")]
         public string Greeting(string name)
         {
-            return $"Hello {name}!";
+            return $"Hi {name}!";
         }
 
         [HttpGet("q3/Cube/{number}")]
@@ -51,7 +51,7 @@ namespace Assignment_1.Controllers
 
             DateTime newDate = currentDate.AddDays(days);
 
-            return currentDate.ToString("yyyy-MM-dd");
+            return newDate.ToString("yyyy-MM-dd");
         }
 
         [HttpPost("q8/squashfellows")]
